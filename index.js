@@ -14,10 +14,10 @@ app.use(express.json())
 
 //Create mysql database connection
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "sgp"
+    host: "sql12.freemysqlhosting.net",
+    user: "sql12530881",
+    password: "uaWI9tFCyi",
+    database: "sql12530881"
   });
   
   db.connect(function(err) {
@@ -27,7 +27,7 @@ const db = mysql.createConnection({
   
   //Create mysql database
 app.get('/createdb', (req, res) => {
-    let sql = 'CREATE DATABASE sgp';
+    let sql = 'CREATE DATABASE sql12530881';
     db.query(sql, (err, result) => {
         if (err) throw err;
         console.log(result)

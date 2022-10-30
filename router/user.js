@@ -12,10 +12,10 @@ app.use(flash())
 
 //Create mysql database connection
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "sgp"
+    host: "sql12.freemysqlhosting.net",
+    user: "sql12530881",
+    password: "uaWI9tFCyi",
+    database: "sql12530881"
   });
   db.connect(function(err) {
     if (err) throw err;
