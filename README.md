@@ -1,7 +1,6 @@
 <h1>Taskify</h1>
 <h2>Task management application</h2>
-<img src="https://raw.githubusercontent.com/om-bhesania/project-management-dashboard/main/Documentations/WhatsApp%20Image%202022-10-31%20at%2011.53.11.jpg
-?raw=true" width="100%" />
+<img src="https://raw.githubusercontent.com/om-bhesania/project-management-dashboard/main/Documentations/WhatsApp%20Image%202022-10-31%20at%2011.53.11.jpgwidth="100%" />
 <h2>Home page</h2>
 
 <br/>
