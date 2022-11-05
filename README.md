@@ -1,12 +1,15 @@
-<h1>Cleanlists</h1>
+<h1>Taskify</h1>
 <h2>Task management application</h2>
-<img src="https://github.com/abel-otegbola/Cleanlists-Task-management-app/blob/master/home.JPG?raw=true" width="100%" />
+<img src="https://raw.githubusercontent.com/om-bhesania/project-management-dashboard/main/Documentations/WhatsApp%20Image%202022-10-31%20at%2011.53.11.jpg
+?raw=true" width="100%" />
 <h2>Home page</h2>
 
 <br/>
 
 <h2>Other pages</h2>
 <div style="display: flex">
-    <img src="https://github.com/abel-otegbola/Cleanlists-Task-management-app/blob/master/dashboard.JPG?raw=true" width="50%" />
-    <img src="https://github.com/abel-otegbola/Cleanlists-Task-management-app/blob/master/spaces.JPG?raw=true" width="50%" />
+    <img src="https://raw.githubusercontent.com/om-bhesania/project-management-dashboard/main/Documentations/WhatsApp%20Image%202022-10-31%20at%2011.56.13.jpg
+?raw=true" width="50%" />
+    <img src="https://raw.githubusercontent.com/om-bhesania/project-management-dashboard/main/Documentations/WhatsApp%20Image%202022-10-31%20at%2011.56.32.jpg
+?raw=true" width="50%" />
 </div>
