@@ -4,6 +4,13 @@ const passport = require('passport');
 const session = require('express-session');
 const path = require('path')
 
+
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const mongoose = require('mongoose');
+const todoRoutes = express.Router();
+
+
 const SQLiteStore = require('connect-sqlite3')(session);
 
 const app = express();
@@ -14,11 +21,11 @@ app.use(express.json())
 
 //Create mysql database connection
 const db = mysql.createConnection({
-    host: "sql12.freemysqlhosting.net",
-    user: "sql12530881",
-    password: "uaWI9tFCyi",
-    database: "sql12530881"
-  });
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "sgp"
+});
   
   db.connect(function(err) {
     if (err) throw err;
@@ -27,7 +34,7 @@ const db = mysql.createConnection({
   
   //Create mysql database
 app.get('/createdb', (req, res) => {
-    let sql = 'CREATE DATABASE sql12530881';
+    let sql = 'CREATE DATABASE sgp';
     db.query(sql, (err, result) => {
         if (err) throw err;
         console.log(result)
@@ -81,3 +88,13 @@ const PORT = process.env.PORT || '3302'
 app.listen(PORT, "localhost", () => {
     console.log(`server started on port ${PORT}`)
 })
+
+
+
+
+
+
+
+
+
+

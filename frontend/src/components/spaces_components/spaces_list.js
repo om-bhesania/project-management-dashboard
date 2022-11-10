@@ -17,8 +17,10 @@ const SpaceList = ({ spaces, user, active, setActive }) => {
         <div className="space-list">
             {
                 spaces.filter(element => element.createdBy === user).map(space => { return (
-                    <div key={space.id} className={`space ${(active === `${space.name}`) ? "active" : ""}`} onClick={() => setActive(space.name)} >
-                        <p>{space.name}</p>
+                    <div key={space.id} 
+                    className={`space ${(active === `${space.name}`) ? "active" : ""}`} 
+                    onClick={() => setActive(space.name)} >
+                    <p>{space.name}</p>
                     </div>
                 ) })
             }

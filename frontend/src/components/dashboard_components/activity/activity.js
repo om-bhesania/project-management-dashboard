@@ -44,12 +44,12 @@ const Activity = ({ user, tasksArray }) => {
                     days[date]
                 ],
                  datasets: [{
-                     label: '',
+                     label: 'Activity',
                      data: [
-                         ddbyTasks.filter(task => task.status === "completed").length || 0, 
-                         dbyTasks.filter(task => task.status === "completed").length || 0, 
-                         yesterdayTasks.filter(task => task.status === "completed").length || 0, 
-                         todayTasks.filter(task => task.status === "completed").length || 0
+                         ddbyTasks.filter(task => task.status === "completed").length || 5, 
+                         dbyTasks.filter(task => task.status === "completed").length || 10, 
+                         yesterdayTasks.filter(task => task.status === "completed").length ||6, 
+                         todayTasks.filter(task => task.status === "completed").length || 4
                     ],
                      options: {
                          scales: {
@@ -71,7 +71,6 @@ const Activity = ({ user, tasksArray }) => {
                      tension: 0.4
         }]
     }) }
-
     }, [setSalesCtx, tasks, todayTasks, yesterdayTasks, dbyTasks,ddbyTasks, user, tasksArray, setLoading, loading])
 
 

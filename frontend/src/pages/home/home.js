@@ -6,6 +6,7 @@ import home_section_img_3 from "../../assets/imgs/home_section_img_3.png"
 
 const Home = () => {
     return(
+        
         <div className="home">
 
             <div className="heading">

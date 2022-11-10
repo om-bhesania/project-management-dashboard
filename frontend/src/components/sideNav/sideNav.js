@@ -1,11 +1,12 @@
 import { useState } from "react"
 import "./sideNav.css"
+// import Parse from 'parse/dist/parse.min.js';
 import { useLocation } from "react-router-dom"
 import demouser from "../../assets/imgs/demouser.jpg"
 
 //fontawesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDashboard, faBell, faCog, faSignOut, faTasks, faBox, faNavicon } from '@fortawesome/free-solid-svg-icons'
+import { faDashboard, faCog, faSignOut, faTasks, faBox, faNavicon } from '@fortawesome/free-solid-svg-icons'
 
 
 const SideNav = () => {
@@ -22,7 +23,7 @@ const SideNav = () => {
         (toggle === "open") ? setToggle("close") : setToggle("open")
         console.log(location.pathname)
     }
-
+ 
 
 
     return (
@@ -30,8 +31,9 @@ const SideNav = () => {
         <div onClick={() => handleToggle()} className="toggle"><FontAwesomeIcon icon={faNavicon} /></div>
         <div className={`side-nav ${toggle}`}>
             <div className="user">
-                <img src={demouser} alt="user"/>
-                <p>Om</p>
+            <a href="/">
+                <img src={demouser} alt="user"/></a>
+                <p>{}</p>
             </div>
 
             <div className="side-nav__main">
@@ -40,11 +42,10 @@ const SideNav = () => {
                     <li><a className={(location.pathname === "/dashboard") ? "active" : ""} href="/dashboard"> <FontAwesomeIcon icon={faDashboard} /> <span>Dashboard</span></a></li>
                     <li><a className={(location.pathname === "/spaces") ? "active" : ""} href="/spaces"> <FontAwesomeIcon icon={faBox} /> <span>Spaces</span></a></li>
                     <li><a className={(location.pathname === "/tasks") ? "active" : ""} href="/tasks"> <FontAwesomeIcon icon={faTasks} /> <span>Tasks</span></a></li>
-                    <li><a className={(location.pathname === "/notifications") ? "active" : ""} href="/notifications"> <FontAwesomeIcon icon={faBell} /> <span>Notifications</span></a></li>
                 </ul>
                 <p>Tools</p>
                 <ul>
-                    <li><a className={(location.pathname === "/settings") ? "active" : ""} href="/settings"> <FontAwesomeIcon icon={faCog} /> <span>Settings</span></a></li>
+                    <li><a className={(location.pathname === "/tasktiles") ? "active" : ""} href="/tasktiles"> <FontAwesomeIcon icon={faCog} /> <span>Tasktiles</span></a></li>
                     <li><a onClick={() => logout()} href="/"> <FontAwesomeIcon icon={faSignOut} /> <span>Logout</span></a></li>
                 </ul>
             </div>

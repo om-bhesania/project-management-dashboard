@@ -1,9 +1,13 @@
 
+  
+  /*
+  Tasks styles
+  */
 .tasks {
   display: flex;
   padding: 0px;
   margin: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(227, 237, 253);
   border-radius: 5px;
 }
 .tasks section {

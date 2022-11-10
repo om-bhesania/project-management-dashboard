@@ -7,9 +7,12 @@ import Footer from "./components/footer/footer";
 import Dashboard from "./pages/dashboard/dashboard";
 import Spaces from "./pages/spaces/spaces";
 import Tasks from "./pages/tasks/tasks";
+import Profile from "./pages/task_tiles/tasktiles";
 import Login from "./pages/Login/login";
 import Register from "./pages/register/register";
+import LogRocket from 'logrocket';
 
+LogRocket.init('qm91yj/sgp');
 
 function App() {
   const [user, setUser] = useState("")
@@ -37,7 +40,6 @@ function App() {
     .catch(err => console.log(err));
   }
 
-
   return (
     <div className="App">
       <Router>
@@ -49,6 +51,7 @@ function App() {
           <Route exact path="/tasks" element={<Tasks user={user} tasksArray={tasksArray} />} />
           <Route exact path="/login" element={<Login/>} />
           <Route exact path="/register" element={<Register/>} />
+          <Route exact path="/tasktiles" element={<Profile user={user} tasksArray={tasksArray} />} />
         </Routes>
         <Footer />
       </Router>

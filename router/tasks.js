@@ -10,10 +10,10 @@ router.use(express.urlencoded({ extended: true }));
 
 //Create mysql database connection
 const db = mysql.createConnection({
-    host: "sql12.freemysqlhosting.net",
-    user: "sql12530881",
-    password: "uaWI9tFCyi",
-    database: "sql12530881"
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "sgp"
   });
 
   db.connect(function(err) {

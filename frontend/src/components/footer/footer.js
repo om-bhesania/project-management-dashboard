@@ -5,7 +5,7 @@ const Footer = () => {
         <footer>
             <a href="/">Taskify</a>
             <div>
-                <p>Copyright &copy; {new Date().getFullYear()}</p>
+                <p>Copyright   &copy; {new Date().getFullYear()} <br /></p>
             </div>
         </footer>
     )

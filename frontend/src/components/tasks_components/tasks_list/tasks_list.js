@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle, faEllipsisVertical, faBarsProgress, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import "./tasks_list.css"
 import { useEffect, useState } from "react";
-import task_bg from "../../../assets/imgs/task-bg.JPG"
+// import task_bg from "../../../assets/imgs/task-bg.JPG"
 
 
 
